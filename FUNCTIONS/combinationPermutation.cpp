@@ -16,6 +16,11 @@ int combination(int n,int r){
     return ncr;
 }
 
+int permutation(int n, int r){
+    int npr = fact(n)/fact(n-r);
+    return npr;
+}
+
 int main(){
    
    int n;
@@ -26,6 +31,8 @@ int main(){
    cin>>r;
 
    int ncr = combination(n,r);
-   cout<<ncr<<endl;
+   int npr = permutation(n,r);
+   cout<<"ncr = "<<ncr<<endl;
+   cout<<"npr = "<<npr<<endl;
 
 }
