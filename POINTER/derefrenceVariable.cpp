@@ -6,7 +6,8 @@ int main(){
     int* p = &x;
     
     cout<<&x<<endl;
-    cout<<p;
+    cout<<p<<endl;
+    cout<<*p; // derefrence variable
 
-    
+    return 0;
 }
