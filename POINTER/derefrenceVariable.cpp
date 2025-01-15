@@ -7,6 +7,7 @@ int main(){
     
     cout<<&x<<endl;
     cout<<p<<endl;
+    cout<<&p<<endl;
     cout<<*p; // derefrence variable
 
     return 0;
