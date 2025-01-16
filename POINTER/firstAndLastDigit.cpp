@@ -1,20 +1,24 @@
 #include<iostream>
 using namespace std;
 
-void digit(int x){
-    int n = x%10;
+void find(int x,int* ptr1,int* ptr2){
+    *ptr2 = x%10;
     while (x>9)
     {
-        x = x/10;
-        
+        x/=10;
+
     }
-    cout<< "first digit is = " <<x << endl <<"second digit is ="<<n;
+    *ptr1 = x;
+    return;
     
 }
 
 int main(){
    int x;
    cin>>x;
-
-   digit(x);
+   int firstDigit,lastDigit;
+   int* ptr1 = &firstDigit;
+   int* ptr2 = &lastDigit;
+   find(x,ptr1,ptr2);
+    cout<<"first digit is = "<<firstDigit<<endl<<"last digit is = "<<lastDigit<<endl;
 }
