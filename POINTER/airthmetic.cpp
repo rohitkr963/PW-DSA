@@ -8,4 +8,6 @@ int main(){
     cout<<*ptr<<endl;
     ptr = ptr+1;
     cout<<*ptr<<endl;
+
+    return 0;
 }
